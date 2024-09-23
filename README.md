@@ -1,4 +1,4 @@
-#Product Name: KnightWallet
+##Product Name: KnightWallet
 
 ## 1. What is the software product?
 The product that the coding commandos are going to develop is a finance app to help users manage their personal finances effectively. It provides tools for budgeting, tracking expenses, and monitoring financial goals.
