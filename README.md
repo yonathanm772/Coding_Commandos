@@ -24,4 +24,4 @@ The features we are going to potentially incorporate a budgeting tool that will 
 ```
 
 ## 6. Product Vision Statement
-Overall, our vision for our product is to get college students to learn how to take control of their finances.  This is accomplished with a user-friendly finance app that empowers users to take control of their finances with simple, intuitive tools.  We aim to help users achieve their financial goals and build a secure financial future.
+Overall, our vision for our product is to empower college students to learn how to take control of their finances.  This is accomplished with a user-friendly finance app to take control of their finances with simple, intuitive tools.  We aim to help users achieve their financial goals and build a secure financial future.
