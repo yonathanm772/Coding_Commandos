@@ -28,3 +28,4 @@ Overall, our vision for our product is to empower college students to learn how 
 
 ## Website
 link: https://jcfarese.github.io/Coding_Commandos/
+Video: https://video.bellarmine.edu/media/KnightWallet/1_f26jw0dy
