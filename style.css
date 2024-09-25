@@ -159,6 +159,10 @@ nav a:hover,
     max-width: 800px;
 }
 
+.hero .page-btn {
+    margin-top: 20px;
+}
+
 h1 {
     font-weight: 700px;
     font-size: clamp(50px, 10vw, 80px);
@@ -195,24 +199,12 @@ h2 span {
     color: var(--cl--2--)
 }
 
-.partner-cards {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    align-items: center;
-    justify-items: center;
-    gap: 2em;
-    padding-top: 2em;
-}
-
-.partner img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%
-}
 /* End Partner */
 
 
 /* Service */
 .service {
+    text-align: center;
     background: linear-gradient(270deg, var(--cl--2--) 0%, rgba(128, 0, 32, 0.05) 100%);
     padding: 4em 0;
     overflow: hidden;
@@ -277,6 +269,7 @@ h2 span {
 }
 
 h3 {
+    text-align: center;
     font-weight: 700;
     font-size: clamp(20px, 5vw, 25px);
     line-height: clamp(20px, 5vw, 25px);
@@ -292,6 +285,7 @@ p {
 
 /* About */
 .about {
+    text-align: center;
     justify-content: center;
     position:relative;
     padding: 4em 0;
@@ -330,8 +324,140 @@ p {
 }
 /* End About */
 
+
+/* Team */
+
+.team {
+    background: linear-gradient(270deg, var(--cl--2--) 0%, rgba(128, 0, 32, 0.05) 100%);
+    padding: 4em 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.team-cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.t-card {
+    position: relative;
+    background: var(--cl--1--);
+    padding: 2em;
+    box-shadow: var(--shadow--);
+}
+
+.t-card img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.t-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: var(--cl--2--);
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.t-card:hover::after {
+    transform: scale(1.05) rotate(-5deg);
+    -webkit-transform: scale(1.05) rotate(-5deg);
+    -moz-transform: scale(1.05) rotate(-5deg);
+    -ms-transform: scale(1.05) rotate(-5deg);
+    -o-transform: scale(1.05) rotate(-5deg);
+}
+
+.t-card .row {
+    fill: var(--cl--1--);
+    align-items: center;
+    justify-content: center;
+    background: var(--cl--2--);
+    padding: 1em;
+    max-width: max-content;
+    margin: 0 auto;
+    box-shadow: var(--shadow--);
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+
+}
+
+.t-card:hover .row {
+    fill: var(--cl--2--);
+    background: var(--cl--1--);
+}
+
+h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(20px, 5vw, 25px);
+    line-height: clamp(20px, 5vw, 25px);
+    text-transform: uppercase;
+    padding: 0.6em 0;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+/* End Team */
+
+/* Product */
+.product {
+    text-align: center;
+    justify-content: center;
+    position:relative;
+    padding: 4em 0;
+}
+
+.product::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    background: linear-gradient(90deg, var(--cl--2--) 0%, rgba(128, 0, 32, 0.05) 100%);
+    z-index: -1;
+    
+}
+
+.product .flex {
+    flex-wrap: wrap-reverse;
+}
+
+.mySwiper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--shadow--);
+}
+
+.swiper-pagination-bullet {
+    background: var(--cl--2--);
+    opacity: 1;
+}
+
+.content p {
+    padding-top: 1em;
+}
+/* End Product */
+
+
 /* Contact */
 .contact {
+    text-align: center;
     align-items: center;
     padding: 4em 0;
 }
@@ -350,6 +476,7 @@ p {
 
 /* Subscribe */
 .subscribe {
+    text-align: center;
     justify-content: center;
 }
 
