@@ -320,6 +320,7 @@ p {
 }
 
 .content p {
+    text-align: center;
     padding-top: 1em;
 }
 /* End About */
@@ -450,7 +451,8 @@ p {
 }
 
 .content p {
-    padding-top: 1em;
+    text-align: center;
+    padding-top: 0.5em;
 }
 /* End Product */
 
