@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Story</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .swiper {
+            width: 100%;
+            height: 200px; /* Set a fixed height for the swiper */
+            overflow: hidden; /* Prevent overflow */
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff; /* Background color for slides */
+            text-align: center;
+            border: 0px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            height: 100%; /* Ensure slide takes full height */
+            overflow: hidden; /* Hide overflow */
+        }
+        .swiper-slide p {
+            padding: 40px;
+            font-size: 30px; 
+            line-height: 1.4; 
+            margin: 0; 
+            overflow: hidden;
+        }
+        .content p {
+            text-align: center;
+            font-size: large;
+            color: white;
+        }
+        h2 {
+            margin-top: 10px;
+        }
+        hr.solid {
+            border: 0;
+            height: 1px;
+            background-color: #ffffff;
+            margin: 20px 0; /* Adds space around the line */
+        }
+        hr.gradient {
+            border: none;
+            height: 5px;
+            background: linear-gradient(to right, #800020, #252b42);
+            margin: 20px 0;
+        }
+        .user_stories {
+            margin: 100px 30px; /* Adds space above and below each user stories section */
+        }
+    </style>
+</head>
+<body>
+    <section class="bg">
+        <div class="container">
+            <!-- Navigation -->
+            <header class="row">
+                <a href="#" class="logo"><span>Knight</span>Wallet</a>
+                <div class="toggleMenu" onclick="toggleMenu();"></div>
+                <nav class="navigation row">
+                    <ul class="row">
+                        <li><a href="designed_artifacts.html" class="page-btn">Home</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- End Navigation -->
+        </div>
+    </section>
+
+    <!-- Alex User Stories -->
+    <section class="user_stories">
+        <h2>Alex, The Planner: Scenario 1</h2>
+        <div class="row flex">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"As a planner, I want to view my monthly spending summary so that I can track my expenses by category."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I need a pie chart to display my spending so that I can easily visualize expense breakdowns."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget-conscious user, I want to adjust my spending allocations for the next month to meet my financial goals."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As an organized user, I want the app to categorize my spending automatically so that I save time."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want to set spending limits for categories to avoid overspending."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a financial planner, I want the app to alert me if I exceed my category budget so that I stay on track."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a detail-oriented user, I need to download my spending report for offline review."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget planner, I want to receive insights on my highest spending categories."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want a clean and simple monthly summary layout for easier navigation."</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+        </div>
+        <div class="content">
+            <p>Swipe to learn more.</p>
+        </div>
+
+        <hr class="solid">
+
+        <h2>Alex, The Planner: Scenario 2</h2>
+        <div class="row flex">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"As a user, I want to view my "emergency savings" category balance immediately."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I need the ability to transfer funds between categories for unexpected expenses."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a planner, I want an alert reminding me if my emergency savings fall below a certain amount."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a cautious user, I want to add notes to expenses to track why they occurred."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I need a way to restore my original savings goal after a transfer."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget-conscious person, I want to avoid penalties when using emergency funds."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want the app to suggest categories where I can reduce spending to replenish emergency funds."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a planner, I want to set recurring contributions to rebuild my emergency savings."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a responsible user, I need a reminder to review my emergency fund usage monthly."</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+        </div>
+        <div class="content">
+            <p>Swipe to learn more.</p>
+        </div>
+
+        <hr class="solid">
+
+        <h2>Alex, The Planner: Scenario 3</h2>
+        <div class="row flex">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"As a learner, I want the app to notify me of new financial literacy tips."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a financial planner, I need categorized tips relevant to my goals (e.g., saving, investing)."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want articles and videos to be short and informative."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a knowledge-seeker, I want to save articles for later reference."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a learner, I want the app to track which tips I've already read."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want to share useful financial tips with friends directly from the app."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a planner, I want to receive weekly notifications on new financial tips."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget-conscious user, I want the tips to be specific to my spending patterns."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want an interactive Q&A feature to clarify financial advice."</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+        </div>
+        <div class="content">
+            <p>Swipe to learn more.</p>
+        </div>
+    </section>
+
+    <hr class="gradient">
+
+    <!-- Sarah User Stories -->
+    <section class="user_stories">
+        <h2>Sarah, The Spontaneous Saver: Scenario 1</h2>
+        <div class="row flex">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"As a spontaneous saver, I want to create a travel fund goal in the app so that I can keep track of my savings progress."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I need the app to calculate and display a weekly savings target based on my goal deadline to make reaching my goal easier."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a frequent traveler, I want the app to show me the remaining balance required for my travel goal, so I know how close I am."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a social user, I want to be able to share my progress with friends, so they can encourage me to keep saving."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget-conscious user, I want the app to suggest where I can cut back on spending to save more toward my travel fund."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a spontaneous planner, I want to set up automatic weekly transfers to my travel fund so I can save without thinking about it."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a visual learner, I want the app to use a progress bar to show how close I am to reaching my travel savings goal."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a goal-oriented user, I want to receive motivational notifications as I reach certain savings milestones."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user who wants flexibility, I want to adjust my goal’s deadline if my saving rate changes."</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+        </div>
+        <div class="content">
+            <p>Swipe to learn more.</p>
+        </div>
+
+        <hr class="solid">
+
+        <h2>Scenario 2</h2>
+        <div class="row flex">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"As a budget-conscious user, I want the app to send me a weekly summary of my spending so that I can see how much I've spent."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a spontaneous spender, I need my spending broken down by categories, like dining, shopping, and entertainment, so I can identify where I overspend."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a visual user, I want a simple chart or graphic in my weekly summary to quickly see my spending patterns."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a cautious user, I want to add notes to expenses to track why they occurred."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I need a way to restore my original savings goal after a transfer."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget-conscious person, I want to avoid penalties when using emergency funds."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want the app to suggest categories where I can reduce spending to replenish emergency funds."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a planner, I want to set recurring contributions to rebuild my emergency savings."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a responsible user, I need a reminder to review my emergency fund usage monthly."</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+        </div>
+        <div class="content">
+            <p>Swipe to learn more.</p>
+        </div>
+
+        <hr class="solid">
+
+        <h2>Sarah, The Spontaneous Saver: Scenario 3</h2>
+        <div class="row flex">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"As a learner, I want the app to notify me of new financial literacy tips."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a financial planner, I need categorized tips relevant to my goals (e.g., saving, investing)."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want articles and videos to be short and informative."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a knowledge-seeker, I want to save articles for later reference."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a learner, I want the app to track which tips I've already read."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want to share useful financial tips with friends directly from the app."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a planner, I want to receive weekly notifications on new financial tips."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget-conscious user, I want the tips to be specific to my spending patterns."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want an interactive Q&A feature to clarify financial advice."</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+        </div>
+        <div class="content">
+            <p>Swipe to learn more.</p>
+        </div>
+    </section>
+    
+    <hr class="gradient">
+
+    <!-- Sarah User Stories -->
+    <section class="user_stories">
+        <h2>Sarah, The Spontaneous Saver: Scenario 1</h2>
+        <div class="row flex">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"As a spontaneous saver, I want to create a travel fund goal in the app so that I can keep track of my savings progress."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I need the app to calculate and display a weekly savings target based on my goal deadline to make reaching my goal easier."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a frequent traveler, I want the app to show me the remaining balance required for my travel goal, so I know how close I am."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a social user, I want to be able to share my progress with friends, so they can encourage me to keep saving."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget-conscious user, I want the app to suggest where I can cut back on spending to save more toward my travel fund."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a spontaneous planner, I want to set up automatic weekly transfers to my travel fund so I can save without thinking about it."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a visual learner, I want the app to use a progress bar to show how close I am to reaching my travel savings goal."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a goal-oriented user, I want to receive motivational notifications as I reach certain savings milestones."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user who wants flexibility, I want to adjust my goal’s deadline if my saving rate changes."</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+        </div>
+        <div class="content">
+            <p>Swipe to learn more.</p>
+        </div>
+
+        <hr class="solid">
+
+        <h2>Sarah, The Spontaneous Saver: Scenario 2</h2>
+        <div class="row flex">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"As a user, I want to view my "emergency savings" category balance immediately."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I need the ability to transfer funds between categories for unexpected expenses."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a planner, I want an alert reminding me if my emergency savings fall below a certain amount."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a cautious user, I want to add notes to expenses to track why they occurred."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I need a way to restore my original savings goal after a transfer."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget-conscious person, I want to avoid penalties when using emergency funds."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want the app to suggest categories where I can reduce spending to replenish emergency funds."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a planner, I want to set recurring contributions to rebuild my emergency savings."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a responsible user, I need a reminder to review my emergency fund usage monthly."</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+        </div>
+        <div class="content">
+            <p>Swipe to learn more.</p>
+        </div>
+
+        <hr class="solid">
+
+        <h2>Sarah, The Spontaneous Saver: Scenario 3</h2>
+        <div class="row flex">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"As a learner, I want the app to notify me of new financial literacy tips."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a financial planner, I need categorized tips relevant to my goals (e.g., saving, investing)."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want articles and videos to be short and informative."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a knowledge-seeker, I want to save articles for later reference."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a learner, I want the app to track which tips I've already read."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want to share useful financial tips with friends directly from the app."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a planner, I want to receive weekly notifications on new financial tips."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget-conscious user, I want the tips to be specific to my spending patterns."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want an interactive Q&A feature to clarify financial advice."</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+        </div>
+        <div class="content">
+            <p>Swipe to learn more.</p>
+        </div>
+    </section>
+
+    <!-- Include Swiper.js CSS and JS -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" 
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
