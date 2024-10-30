@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .swiper {
+            width: 100%;
+            height: 200px; /* Set a fixed height for the swiper */
+            overflow: hidden; /* Prevent overflow */
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff; /* Background color for slides */
+            text-align: center;
+            border: 0px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            height: 100%; /* Ensure slide takes full height */
+            overflow: hidden; /* Hide overflow */
+        }
+        .swiper-slide p {
+            padding: 40px;
+            font-size: 30px; 
+            line-height: 1.4; 
+            margin: 0; 
+            overflow: hidden;
+        }
+        .content {
+            margin-top: 20px;
+            font-size: 18px; /* Optionally increase the font size of this paragraph as well */
+            
+        } 
+           
+    </style>
+</head>
+<body>
+    <section class="bg">
+        <div class="container">
+            <!-- Navigation -->
+            <header class="row">
+                <a href="#" class="logo"><span>Knight</span>Wallet</a>
+                <div class="toggleMenu" onclick="toggleMenu();"></div>
+                <nav class="navigation row">
+                    <ul class="row">
+                        <li><a href="designed_artifacts.html" class="page-btn">Home</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- End Navigation -->
+        </div>
+    </section>
+
+    <section class="user_stories">
+        <h2>Alex, The Planner</h2>
+        <div class="row flex">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"As a planner, I want to view my monthly spending summary so that I can track my expenses by category."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I need a pie chart to display my spending so that I can easily visualize expense breakdowns."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget-conscious user, I want to adjust my spending allocations for the next month to meet my financial goals."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As an organized user, I want the app to categorize my spending automatically so that I save time."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want to set spending limits for categories to avoid overspending."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a financial planner, I want the app to alert me if I exceed my category budget so that I stay on track."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a detail-oriented user, I need to download my spending report for offline review."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a budget planner, I want to receive insights on my highest spending categories."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"As a user, I want a clean and simple monthly summary layout for easier navigation."</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="content">
+                <p>Swipe to learn more about our mission and vision.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Include Swiper.js CSS and JS -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" 
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
