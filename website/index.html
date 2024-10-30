@@ -23,16 +23,24 @@
                     <div class="toggleMenu" onclick="toggleMenu();"></div>
                     <nav class="navigation row">
                         <ul class="row">
+                            <li>
+                                <a href="designed_artifacts.html">Designed Artifacts</a>
+                            </li>                           
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#about">About us</a></li>
-                            <li><a href="#team">team</a></li>
-                            <li><a href="#product">Product Vision</a></li>
-                            <li><a href="#contact">Contact us</a></li>
+                            <li>
+                                <a href="#about">About us</a>
+                                <ul class="dropdown">
+                                    <li><a href="#team">Meet The Team</a></li>
+                                    <li><a href="#product">Product Vision</a></li>
+                                    <li><a href="#contact">Contact us</a></li>
+                                </ul>
+                            </li> 
                             <li><a href="#page-btn" class="page-btn">Get Started</a></li>
                         </ul>
                     </nav>
                 </header>
             <!-- End Navigation -->
+
             <!-- Hero Section-->
             <div class="hero row">
                 <div>
@@ -366,3 +374,4 @@
 <!-- .row {
     display: flex;
 }-->
+<!-- Create dropdown menu for about us and include product vision and team section in it-->

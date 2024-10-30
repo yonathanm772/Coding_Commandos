@@ -110,6 +110,91 @@ nav a:hover,
     color: var(--cl--2--);
 }
 
+/* Dropdown Hover */
+.navigation > .row {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation > .row > li {
+    position: relative;
+}
+
+.navigation > .row > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--cl--1--);
+    text-decoration: none;
+}
+
+.navigation > .row > li > a:hover {
+    background-color: #555;
+    color: var(--cl--2--);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #444;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000; /* Ensure dropdown is above other content */
+}
+
+.dropdown li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: #555;
+    color: var(--cl--2--);
+}
+
+.navigation > .row > li:hover .dropdown {
+    display: block;
+}
+
+/* Styles for the side submenu */
+.dropdown li {
+    position: relative; /* Position for the nested submenu */
+}
+
+.submenu-side {
+    display: none; /* Hide the side submenu by default */
+    position: absolute; /* Position it absolutely */
+    left: 100%; /* Position to the right of the parent submenu */
+    top: 0; /* Align with the top of the parent */
+    background-color: #444;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown li:hover .submenu-side {
+    
+    display: block; /* Show the side submenu on hover */
+}
+
+/* Styles for the side submenu items */
+.submenu-side  li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu-side li a:hover {
+    background-color: #555;
+    color: var(--cl--2--);
+}
+/* !Dropdown Hover*/
+
 /* Page Button*/
 .page-btn, .page-btn.active {
     cursor: pointer;
@@ -170,9 +255,26 @@ h1 {
     color: var(--cl--1--);
 }
 
+.hero h2 {
+    
+    color: var(--cl--1--);
+}
+
 hero a {
     margin-top: 2em;
 }
+
+.hero .quote-box {
+    border: 3px solid #220404; /* Border around the box */
+    padding: 15px; /* Space inside the box */
+    margin: 20px; /* Space outside the box */
+    font-weight: 500px; 
+    background-color: #f9f9f900;
+    border-radius: 5px; /* Rounded corners */
+    color: #333; /* Text color */
+    text-align: center; /* Center the text */
+}
+
 
 /* End Hero Section */
 
@@ -637,4 +739,130 @@ hr {
     .about::after {
         height: 25%;
     }
+    
+   
 }
+
+ /* Interview */
+.interview {
+    padding: 20px;
+    margin: 20px;
+    background: var(--cl--2--); /* Light grey background */
+    border-radius: 5px;
+}
+
+.qa {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Border for Q&A */
+    border-radius: 5px;
+    background: #fff; /* White background for Q&A */
+    overflow: hidden;
+    position: relative;
+   
+}
+
+.qa h3 {
+    font-size: 20px;
+    color: var(--cl--2--);
+    text-transform: uppercase;
+    padding-bottom: 0.5em;
+    margin: 0; /* Remove default margin */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.qa p { 
+    padding-bottom: 0.5em;
+    opacity: 0; /* Hide the answer by default */
+    white-space: nowrap; /* Prevent line breaks */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    position: absolute; /* Position answer on top */
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to truly center */
+}
+
+.qa {
+    position: relative;
+}
+
+
+.qa:hover h3 {
+    opacity: 0; /* Fade out the question on hover */
+}
+
+
+.qa:hover p {
+    opacity: 1; /* Fade in the answer when hovering */
+}
+
+.qa h3:hover {
+    cursor: pointer; /* Optional: change cursor to pointer */
+}
+/* !End Interview */
+
+/* Personas*/
+.text-box {
+    border: 2px solid var(--cl--2--); 
+    border-radius: 10px;       /* Rounded corners */
+    padding: 20px;             /* Inner spacing */
+    width: 1000px;              /* Fixed width */
+    font-family: Arial, sans-serif; /* Font style */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    margin-top: 50px;         /* Margin from the top */
+    margin-left: auto;        /* Centering horizontally */
+    margin-right: auto;
+}
+.text-box h2 {
+    text-align: center; /* Center title */
+    color: var(--cl--2--);     /* Title color */
+}
+/* !End Personas*/
+
+.secondary-footer {
+    background-color: var(--cl--3--); /* Different background color for secondary footer */
+    color: #ccc; /* Text color for secondary footer */
+    padding: 25px 0; /* Padding for secondary footer */
+    margin-top: 100px;
+}
+
+/* User Stories */
+.user_stories {
+    padding: 20px;
+    margin: 20px;
+    background: var(--cl--2--); /* Light grey background */
+    border-radius: 5px;
+}
+
+.qa {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Border for Q&A */
+    border-radius: 5px;
+    background: #fff; /* White background for Q&A */
+    overflow: hidden;
+    position: relative;
+   
+}
+
+.qa h3 {
+    font-size: 20px;
+    color: var(--cl--2--);
+    text-transform: uppercase;
+    padding-bottom: 0.5em;
+    margin: 0; /* Remove default margin */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.qa p { 
+    padding-bottom: 0.5em;
+    opacity: 0; /* Hide the answer by default */
+    white-space: nowrap; /* Prevent line breaks */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    position: absolute; /* Position answer on top */
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to truly center */
+}
+/* !User Stories */
