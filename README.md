@@ -27,7 +27,33 @@ The features we are going to potentially incorporate a budgeting tool that will 
 Overall, our vision for our product is to empower college students to learn how to take control of their finances.  This is accomplished with a user-friendly finance app to take control of their finances with simple, intuitive tools.  We aim to help users achieve their financial goals and build a secure financial future.
 
 ## Website
- 
-* link: https://jcfarese.github.io/Coding_Commandos/
-* Video: https://video.bellarmine.edu/media/KnightWallet/1_f26jw0dy
-* Artifact and User Video: https://video.bellarmine.edu/media/Assignment%202%20Video/1_dllf872g
+link: https://jcfarese.github.io/Coding_Commandos/
+Video: https://video.bellarmine.edu/media/KnightWallet/1_f26jw0dy
+
+### Unit Testing
+# Budget Tracker
+
+This is a simple budgeting and spending tracker application built with Flask, containerized with Docker, and includes a separate container for running unit tests.
+
+## Features
+- Add and view transactions.
+- Dockerized for easy setup and deployment.
+- Includes basic unit tests.
+
+---
+
+## Prerequisites
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+---
+
+## Running the Application
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/budget-tracker.git
+   cd budget-tracker
+   docker-compose down (deletes any active dockers)
+   docker-compose up --build (build the feature in a docker)
+   docker-compose up tests (runs the unit tests)
+

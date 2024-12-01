@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1 1 45%;  /* Flex items with a base of 45% width */
+}
+
+form button {
+    background-color: #800020;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #252b42;
+}
+
+form input[type="number"], form select {
+    flex: 1 1 100%;  /* Full width for number and select input fields */
+}
+
+/* Expense Table */
+.expense-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.expense-table th, .expense-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.expense-table th {
+    background-color: #800020;
+    color: #ffffff;
+}
+
+/* Total Amount */
+.total-amount {
+    text-align: right;
+    font-size: 18px;
+}
+
+/* Filter Section */
+.filter {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
+.filter select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small devices (mobile-first design) */
+@media (max-width: 768px) {
+    /* Stack the form elements vertically */
+    form {
+        flex-direction: column;
+    }
+
+    /* Adjust form inputs to take full width on smaller screens */
+    form input, form select, form button {
+        flex: 1 1 100%;
+    }
+
+    /* Reduce table font size and adjust layout for mobile */
+    .expense-table table {
+        font-size: 14px;
+    }
+
+    .total-amount {
+        font-size: 16px;
+    }
+}
+
+/* For larger screens (tablet and above) */
+@media (min-width: 769px) {
+    .container {
+        max-width: 90%;  /* Allow more space on larger screens */
+    }
+
+    /* Ensure form layout stays horizontal on larger screens */
+    form {
+        flex-direction: row;
+    }
+}
