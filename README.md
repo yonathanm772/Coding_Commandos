@@ -29,3 +29,31 @@ Overall, our vision for our product is to empower college students to learn how 
 ## Website
 link: https://jcfarese.github.io/Coding_Commandos/
 Video: https://video.bellarmine.edu/media/KnightWallet/1_f26jw0dy
+
+### Unit Testing
+# Budget Tracker
+
+This is a simple budgeting and spending tracker application built with Flask, containerized with Docker, and includes a separate container for running unit tests.
+
+## Features
+- Add and view transactions.
+- Dockerized for easy setup and deployment.
+- Includes basic unit tests.
+
+---
+
+## Prerequisites
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+---
+
+## Running the Application
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/budget-tracker.git
+   cd budget-tracker
+   docker-compose down (deletes any active dockers)
+   docker-compose up --build (build the feature in a docker)
+   docker-compose up tests (runs the unit tests)
+
