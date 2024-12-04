@@ -52,7 +52,7 @@ This is a simple budgeting and spending tracker application built with Flask, co
 ## Running the Application
 1. Clone the repository:
    ```bash
-   git clone https://github.com/jcfarese/Coding_Commandos/.git
+   git clone https://github.com/jcfarese/Coding_Commandos.git
    cd knight-wallet
    docker-compose down (deletes any active dockers)
    docker-compose up --build (build the feature in a docker)
