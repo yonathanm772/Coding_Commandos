@@ -32,7 +32,7 @@ Overall, our vision for our product is to empower college students to learn how 
 
   
 ## 8. Unit Testing
-# Budget Tracker
+### Budget Tracker
 
 This is a simple budgeting and spending tracker application built with Flask, containerized with Docker, and includes a separate container for running unit tests.
 
