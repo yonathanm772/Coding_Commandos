@@ -51,7 +51,7 @@ This is a simple budgeting and spending tracker application built with Flask, co
 ## Running the Application
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/budget-tracker.git
+   git clone https://github.com/jcfarese/Coding_Commandos/budget-tracker.git
    cd budget-tracker
    docker-compose down (deletes any active dockers)
    docker-compose up --build (build the feature in a docker)
