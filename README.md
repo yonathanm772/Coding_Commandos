@@ -50,17 +50,17 @@ This is a simple budgeting and spending tracker application built with Flask, co
 ---
 
 ## Running the Application
-# 1. Clone the repository:
+##### 1. Clone the repository:
    - git clone https://github.com/jcfarese/Coding_Commandos.git
      
-# 2. Change Directory to knight-wallet
+##### 2. Change Directory to knight-wallet
    - cd knight-wallet
 
-# 3. Setup the Docker Container
+##### 3. Setup the Docker Container
    - docker-compose down (deletes any active dockers)
    - docker-compose up --build (build the feature in a docker)
    - docker-compose up tests (runs the unit tests)
 
-# 4. Run the Docker Container
-   - In the terminal click on port: http://127.0.0.1:5000
+#### 4. Run the Docker Container
+   - In the terminal open the port: http://127.0.0.1:5000
 
