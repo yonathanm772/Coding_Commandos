@@ -1,5 +1,5 @@
 services:
-  spending-tracker:
+  knight-wallet:
     build:
       context: .
       dockerfile: Dockerfile
