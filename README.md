@@ -26,12 +26,12 @@ The features we are going to potentially incorporate a budgeting tool that will 
 ## 6. Product Vision Statement
 Overall, our vision for our product is to empower college students to learn how to take control of their finances.  This is accomplished with a user-friendly finance app to take control of their finances with simple, intuitive tools.  We aim to help users achieve their financial goals and build a secure financial future.
 
-## Website
+## 7. Website
 - link: https://jcfarese.github.io/Coding_Commandos/
 - Design Video: https://video.bellarmine.edu/media/KnightWallet/1_f26jw0dy
 
   
-### Unit Testing
+## 8. Unit Testing
 # Budget Tracker
 
 This is a simple budgeting and spending tracker application built with Flask, containerized with Docker, and includes a separate container for running unit tests.
@@ -49,7 +49,7 @@ This is a simple budgeting and spending tracker application built with Flask, co
 
 ---
 
-## Running the Application
+## 9. Running the Application
 ##### 1. Clone the repository:
    - git clone https://github.com/jcfarese/Coding_Commandos.git
      
