@@ -27,8 +27,8 @@ The features we are going to potentially incorporate a budgeting tool that will 
 Overall, our vision for our product is to empower college students to learn how to take control of their finances.  This is accomplished with a user-friendly finance app to take control of their finances with simple, intuitive tools.  We aim to help users achieve their financial goals and build a secure financial future.
 
 ## Website
-link: https://jcfarese.github.io/Coding_Commandos/
-Video: https://video.bellarmine.edu/media/KnightWallet/1_f26jw0dy
+- link: https://jcfarese.github.io/Coding_Commandos/
+- Video: https://video.bellarmine.edu/media/KnightWallet/1_f26jw0dy
 
 ### Unit Testing
 # Budget Tracker
